@@ -1,0 +1,255 @@
+[
+    {
+        "entrys": [
+            {
+                "stateMutability": "Nonpayable",
+                "type": "Constructor"
+            },
+            {
+                "inputs": [
+                    {
+                        "indexed": true,
+                        "name": "role",
+                        "type": "bytes32"
+                    },
+                    {
+                        "indexed": true,
+                        "name": "previousAdminRole",
+                        "type": "bytes32"
+                    },
+                    {
+                        "indexed": true,
+                        "name": "newAdminRole",
+                        "type": "bytes32"
+                    }
+                ],
+                "name": "RoleAdminChanged",
+                "type": "Event"
+            },
+            {
+                "inputs": [
+                    {
+                        "indexed": true,
+                        "name": "role",
+                        "type": "bytes32"
+                    },
+                    {
+                        "indexed": true,
+                        "name": "account",
+                        "type": "address"
+                    },
+                    {
+                        "indexed": true,
+                        "name": "sender",
+                        "type": "address"
+                    }
+                ],
+                "name": "RoleGranted",
+                "type": "Event"
+            },
+            {
+                "inputs": [
+                    {
+                        "indexed": true,
+                        "name": "role",
+                        "type": "bytes32"
+                    },
+                    {
+                        "indexed": true,
+                        "name": "account",
+                        "type": "address"
+                    },
+                    {
+                        "indexed": true,
+                        "name": "sender",
+                        "type": "address"
+                    }
+                ],
+                "name": "RoleRevoked",
+                "type": "Event"
+            },
+            {
+                "outputs": [
+                    {
+                        "type": "bytes32"
+                    }
+                ],
+                "name": "DEFAULT_ADMIN_ROLE",
+                "stateMutability": "View",
+                "type": "Function"
+            },
+            {
+                "outputs": [
+                    {
+                        "type": "bool"
+                    }
+                ],
+                "inputs": [
+                    {
+                        "name": "receiver",
+                        "type": "address"
+                    },
+                    {
+                        "name": "amount",
+                        "type": "uint256"
+                    },
+                    {
+                        "name": "nonce",
+                        "type": "uint256"
+                    },
+                    {
+                        "name": "messageHash",
+                        "type": "bytes32"
+                    },
+                    {
+                        "name": "signature",
+                        "type": "bytes"
+                    }
+                ],
+                "name": "claimReward",
+                "stateMutability": "Nonpayable",
+                "type": "Function"
+            },
+            {
+                "outputs": [
+                    {
+                        "type": "bytes32"
+                    }
+                ],
+                "inputs": [
+                    {
+                        "name": "receiver",
+                        "type": "address"
+                    },
+                    {
+                        "name": "amount",
+                        "type": "uint256"
+                    },
+                    {
+                        "name": "nonce",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "generateTRXSignedMessageHash",
+                "stateMutability": "Pure",
+                "type": "Function"
+            },
+            {
+                "outputs": [
+                    {
+                        "type": "bytes32"
+                    }
+                ],
+                "inputs": [
+                    {
+                        "name": "role",
+                        "type": "bytes32"
+                    }
+                ],
+                "name": "getRoleAdmin",
+                "stateMutability": "View",
+                "type": "Function"
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "role",
+                        "type": "bytes32"
+                    },
+                    {
+                        "name": "account",
+                        "type": "address"
+                    }
+                ],
+                "name": "grantRole",
+                "stateMutability": "Nonpayable",
+                "type": "Function"
+            },
+            {
+                "outputs": [
+                    {
+                        "type": "bool"
+                    }
+                ],
+                "inputs": [
+                    {
+                        "name": "role",
+                        "type": "bytes32"
+                    },
+                    {
+                        "name": "account",
+                        "type": "address"
+                    }
+                ],
+                "name": "hasRole",
+                "stateMutability": "View",
+                "type": "Function"
+            },
+            {
+                "outputs": [
+                    {
+                        "type": "uint256"
+                    }
+                ],
+                "inputs": [
+                    {
+                        "type": "address"
+                    }
+                ],
+                "name": "nonces",
+                "stateMutability": "View",
+                "type": "Function"
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "role",
+                        "type": "bytes32"
+                    },
+                    {
+                        "name": "account",
+                        "type": "address"
+                    }
+                ],
+                "name": "renounceRole",
+                "stateMutability": "Nonpayable",
+                "type": "Function"
+            },
+            {
+                "inputs": [
+                    {
+                        "name": "role",
+                        "type": "bytes32"
+                    },
+                    {
+                        "name": "account",
+                        "type": "address"
+                    }
+                ],
+                "name": "revokeRole",
+                "stateMutability": "Nonpayable",
+                "type": "Function"
+            },
+            {
+                "outputs": [
+                    {
+                        "type": "bool"
+                    }
+                ],
+                "inputs": [
+                    {
+                        "name": "interfaceId",
+                        "type": "bytes4"
+                    }
+                ],
+                "name": "supportsInterface",
+                "stateMutability": "View",
+                "type": "Function"
+            },
+            {
+                "stateMutability": "Payable",
+                "type": "Receive"
+            }
+        ]
+    }
+]
